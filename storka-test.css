@@ -1,0 +1,109 @@
+.wrapper {
+    font-family: 'Inter';
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 743px;
+    height: 91px;
+    background-color: rgba(53, 121, 245, 1);
+    border-radius: 15px;
+}
+
+.check-list {
+    left: 100px;
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: rgba(35, 100, 219, 1); 
+    border-radius: 150px;
+    padding: 1px 13px 1px 13px;
+}
+
+.completed {
+    width: 211px;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    left: 98px;
+    bottom: 18px;
+}
+
+.next-step {
+    position: absolute;
+    width: 389px;
+    height: 18px;
+    left: 98px;
+    top: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+svg {
+	width: 200px;
+    padding-top: 5px;
+    padding-left: 3px;
+    align-self: flex-start;
+}
+
+svg circle {
+	fill: none;
+	stroke-width: 10;
+	stroke: #000;
+}
+
+svg circle.default {
+	opacity: .2;
+	stroke-dasharray: 125.6;
+}
+
+svg circle.default.inner {
+	opacity: .5;
+	stroke-dashoffset: 125.6;
+	animation: circle-default 3s infinite;
+}
+
+@keyframes circle-default {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+svg circle.dashed {
+	stroke-dasharray: 1px;
+}
+
+.open-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    left: 555px;
+    top: calc(50% - 40px/2 + 0.5px);
+    color:rgba(71, 119, 237, 1);
+    background: #F4F8FF;
+    border-radius: 6px;
+    border: 0;
+}
